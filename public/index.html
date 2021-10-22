@@ -1,89 +1,356 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Lineamientos Nivel Medio  |  MinCultura</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.1.3/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.1.3/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.1.3/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.1.3/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.1.3/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.1.3/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.1.3/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.1.3/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.1.3/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.1.3/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/lineamientos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+     <!-- Owl Carousel Assets -->
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
+
+    <!--inicio estilos menu -->
+     <link rel="stylesheet" type="text/css" href="vertical-menu/css/component.css" />
+    <script src="vertical-menu/js/modernizr.custom.js"></script>
+    <!-- Fin estilos menu-->
+
+
+
+
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+
+
+<!--Inicio container principal -->
+
+
+
+<!-- //////////////////////////
+ NICIO MENU MODAL
+ //////////////////////////// -->
+
+ <div id="gn-menu" class="gn-menu-main">
+<div id="bc1" class="btn-group btn-breadcrumb">
+<a type="button" class="btn btn-default" data-toggle="modal" data-target="#menugeneral">Menú Principal</a>
+<a href="index.html" class="btn btn-default">Inicio</a>
+</div>
+</div>
+
+
+  <div class="modal fade" id="menugeneral" role="dialog">
+
+      <!-- Modal content-->
+        <div class="modal-header">
+          <button type="button"  class="close" style="color: #fff;" data-dismiss="modal">cerrar</button>
+          <h4 >Menu General</h4>
+        </div>
+
+
+        <div class="modal-body">
+          <p id="listadomenu" >
+
+
+<a class="principales"  href="index.html">Portada y Créditos</a>
+<a class="principales"  href="0.1introduccion.html">Introducción</a>
+<a class="principales"  href="0.2presentacion.html">Presentación</a>
+<a class="principales"  href="0.3logicas.html">Lógicas culturales</a>
+
+<a class="principales"  href="1.html">1. Formatos en el nivel medio</a>
+<a   href="1.1.html">1.1. Músicas Tradicionales-Regionales</a>
+<a   href="1.2.html">1.2. Músicas Urbanas y Populares</a>
+<a   href="1.3.html">1.3. Coros</a>
+<a   href="1.4.html">1.4. Bandas</a>
+<a   href="1.5.html">1.5. Orquestas</a>
+<a   href="1.6.html">1.6. Técnicas instrumentales, de montaje y dirección, para bandas, orquestas y coros</a>
+
+<a  class="principales"  href="2.html">2. Formación musical para población en condición de discapacidad</a>
+<a   href="2.1.html">2.1. Discapacidad cognitiva</a>
+<a   href="2.1.html">2.2. Discapacidad auditiva</a>
+<a   href="2.1.html">2.3. Discapacidad visual</a>
+<a   href="2.1.html">2.4. Discapacidad física</a>
+<a   href="2.1.html">2.5. Pautas metodológicas para el trabajo con la población en situación de discapacidad</a>
+<a   href="2.1.html">2.6. Pautas de desarrollo creativo para población con discapacidad</a>
+<a   href="2.1.html">2.7. El sentido estético-analítico en población con discapacidad</a>
+
+
+
+<a  class="principales"   href="bibliografia.html">Referencias bibliográficas</a>
+
+
+
+
+
+        </p>
+        </div>
+
+
+  </div>
+
+ <!-- //////////////////////////
+FINAL MENU MODAL
+ //////////////////////////// -->
+
+
+
+
+
+
+
+
+
+ <div id="owlcapitulos" class="owl-carousel">
+
+
+<!--inicio CAPITULO 6-->
+<div class="item capi0">
+
+
+ <h1 id="titulointro" >LINEAMIENTOS DE FORMACIÓN MUSICAL</h1>
+ <h1 id="nivelmedio">Nivel Medio
+    </h1>
+ 
+
+<div style="background-color:white;height:80px;width:100%;position:absolute; bottom:60px; padding:4px; margin-top:20px; text-align:center;"><img src="img/assets/logos.jpg" height="100%"></div>
+
+<!--Inicio Barra Inferior-->
+
+<div class="barrainferior" style="position:fixed; bottom:0px;" >
+
+
+
+<div class="col-xs-12" id="cajapaginador">
+
+<a class="btn btn-default" data-toggle="modal" data-target="#creditos">Créditos</a>
+<a class="btn btn-default" href="1.EntradaCapitulos.html">Contenido</a>
+
+
+</div>
+</div>
+<!--Final Barra Inferior-->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--final slider-->
+
+</div>
+
+
+<!--Final Contenido-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div id="creditos" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+      <div class="modal-body creditos ">
+
+
+      <h2 >Créditos</h2>
+<h3>REPÚBLICA DE COLOMBIA MINISTERIO DE CULTURA </h3>
+<h3>www.mincultura.gov.co</h3><br>
+<br>
+<h3>GUSTAVO GONZÁLEZ PALENCIA<br>
+  JUAN PABLO NOREÑA CARDONA<br>
+  LEONIDAS VALENCIA VALENCIA<br>
+  SAMUEL IBARRA CONDE<br>
+  CÉSAR CANO ARTEAGA<br>
+  ANA MARÍA ULLOA REYES<br>
+  OSCAR ARMANDO CELIS GONZÁLEZ<br>
+  DIVIAN CAROLINA CASTILLO ALARCÓN<br>
+  INGRID VICTORIA SARMIENTO APONTE<br>
+  </h3>
+  Coautores <br><br>
+
+<h3>
+  CLAUDIA MARINA MEJÍA GARZÓN<br>
+  JORGE FRANCO DUQUE<br>
+  </h3>
+  Asesoría pedagógica y de contenidos<br>
+  <br>
+  <h3>CLAUDIA MARINA MEJÍA GARZÓN<br></h3>
+  Coordinación Componente de Formación Area de Música <br>
+Ministerio de Cultura<br><br>
+<h3>DIVIAN CAROLINA CASTILLO ALARCÓN<br></h3>
+Coordinación Académica<br><br>
+<h3>INGRID VICTORIA SARMIENTO APONTE<br></h3>
+Coordinación de Redacción<br><br>
+<h3>LILIANA DEL PILAR FLECHAS RODRÍGUEZ<br></h3>
+Apoyo profesional al componente de formación <br>
+Ministerio de Cultura
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  </div>
+</div><!--/Modal-->
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+  </body>
+
+<!--inicio  script paginador -->
+
+     <script src="js/responsive-paginate.js"></script>
+
+<script>
+        $(document).ready(function () {
+            $(".pagination").rPage();
+        });
     </script>
   </body>
 </html>
+
+
+<!--Fin  script paginador  -->
+
+
+<!-- Owlcarrusel-->
+
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+<script src="owl-carousel/owl.carousel.js"></script>
+
+<style>
+#owlcapitulos .item{
+
+        height: 90vh;
+        margin-top: -10px;
+        color:  #333;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        min-height: 40px;
+        z-index: 0;
+
+    }
+
+
+
+#owlcapitulos {
+      margin-top: 60px;
+font-family: 'Oxygen', sans-serif;
+    }
+
+
+
+#owlcapitulos h1 {
+  color: #fff;
+  margin-left: 18%;
+  margin-top: 20%;
+    margin-right:34%;
+}
+
+
+.owl-buttons{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  font-weight: bolder;
+
+
+}
+
+.owl-next {
+  float: right;
+}
+
+.owl-prev {
+  float: left;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    color: #FFF;
+    display: inline-block;
+    zoom: 1;
+    margin: 5px;
+    padding: 3px 10px;
+    font-size: 2em;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: #333;
+    opacity: 1;
+    width: 50px;
+  height: 100px;
+  padding-top: 30px;}
+
+</style>
+
+<script>
+    $(document).ready(function() {
+      $("#owlcapitulos").owlCarousel({
+        navigation : true,
+        navigationText: ["<",">"],
+        autoPlay: false,
+        singleItem: true,
+         loop: true,
+         pagination: false
+
+      });
+    });
+</script>
