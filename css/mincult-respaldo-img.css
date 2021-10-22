@@ -1,0 +1,989 @@
+
+/* ---------CONTENIDO--------------------
+-----------------------------------------
+
+1. ESTILOS GENERALES
+2. SCROLL BAR GENERAL
+3. SCROLL BAR CAJATEXTO
+4. MENU HORIZONTAL
+5. MENU VERTICAL
+6. BREADCRUMB
+7. ÁREA DE CONTENIDO
+8. ÁREA DE RECURSOS 
+9. PAGINADORES
+10. REGLAS MEDIAQUERY
+
+------------------------------------------
+-----------------------------------------*/
+
+
+
+
+/* ---------1. ESTILOS GENERALES-----------
+-----------------------------------------*/
+p {
+  text-align: justify;
+}
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-color: #cccccc;
+  max-width: 1800px;
+  margin: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+
+.cajatexto h1 {
+  font-family: 'Baloo', sans-serif;
+  font-weight: bold;
+  color: #7d294e;
+  text-transform: uppercase;
+  font-size:2.8rem;
+  margin-bottom:15px;
+}
+.cajatexto h2 {
+  font-family: 'Baloo', sans-serif;
+  font-weight: bold;
+  color: #7d294e;
+  font-size:2.2rem;
+}
+
+.cajatexto h3{
+  font-family: 'Baloo', sans-serif;
+  font-weight: bold;
+  color: #a1868a;
+  font-size:1.7rem;
+}
+
+.cajatexto p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  text-align:justify;
+  text-indent: 2rem;
+  word-break: normal;
+  word-wrap: normal;
+  color:#555;
+}
+
+.cajatexto li{
+  color:#7d294e;
+}
+.cajatexto li p{font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  text-align:justify;
+  text-indent: 0;
+  word-break: normal;
+  word-wrap: normal;
+  color:#555;}
+.cajatexto blockquote{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size:1.3rem;
+  text-align:justify;
+  word-break: normal;
+  word-wrap: normal;
+  color:#777;
+  border-left: 1px solid #7d294e;
+}
+
+p.figura{
+  font-family: 'Baloo', sans-serif;
+  color: #7d294e;
+  text-align:center;
+  text-indent:0;
+}
+p.figura span{
+  font-family: 'Open Sans', sans-serif;
+  color:#555;
+  font-size: 1.3rem;
+  color:#777;
+}
+
+.modal h4{
+  font-family: 'Baloo', sans-serif;
+  color: #7d294e;
+
+}
+
+.cajatexto p b, .cajatexto p strong {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+.cajatexto p i, .cajatexto p em {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+.cajatexto .color{
+  color: #7d294e;
+}
+.cajatexto p.firstp {
+  text-indent: 0px;
+}
+
+.row {
+  margin-left:0;
+  margin-right:0;
+}
+
+
+.centercontent{
+  text-align:center;
+}
+
+.cajatexto p sup a{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #7d294e;
+  font-size:1.5rem;
+}
+.cajatexto .modal-content{
+padding:20px!IMPORTANT;
+}
+.cajatexto .modal-content p{
+  margin-top:10px!IMPORTANT;
+
+}
+
+.cajatexto .imgcontainer img{width:100%;}
+
+.cajatexto .fuente{
+    font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  color: #7d294e;
+  font-size:1.2rem;
+}
+
+
+.flechaspan {
+  float: right;
+}
+
+
+.collapse {
+  padding: 0.6em;
+}
+
+
+/* ----------------------------------------
+-----------------------------------------*/
+
+
+
+
+/* ---------2. SCROLL BAR GENERAL-----------
+-----------------------------------------*/
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 14px;
+}
+
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #9e3564;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9e3564;
+}
+
+
+::-webkit-scrollbar-thumb:active {
+  background: #5f0739;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #909090;
+  border: 0px none #ffffff;
+  border-radius: 83px;
+}
+
+
+::-webkit-scrollbar-track:hover {
+  background: #8b8b8b;
+}
+
+
+::-webkit-scrollbar-track:active {
+  background: #5d5d5d;
+}
+
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ----------------------------------------
+-----------------------------------------*/
+
+
+
+
+/* ---------3. SCROLL BAR CAJATEXTO-----------
+-----------------------------------------*/
+
+.cajatexto::-webkit-scrollbar {
+  width:5px;
+}
+
+
+.cajatexto::-webkit-scrollbar-thumb{
+width:30px;
+max-height:30px;
+}
+
+/* ----------------------------------------
+-----------------------------------------*/
+
+
+
+
+/* ---------4. MENU HORIZONTAL-- -----------
+-----------------------------------------*/
+/*caja superiior del menú horizontal*/
+#menuh{
+background-color: #9e3564;
+border:0;
+}
+
+
+/*todos los links del menú horizontal*/
+#menuh a{
+color: #fff;
+}
+
+/*Color del ítem que despliega menú mientras activo*/
+#menuh.navbar-default .navbar-nav > .open > a{
+  background-color:#b44659;
+}
+
+/*menú desplegable(General)*/
+#menuh .dropdown-menu{
+background-color:#b44659;
+}
+
+
+#menuh .dropdown-menu .divider{
+margin:0;
+}
+
+#menuh .dropdown-menu li:not(.divider) a{
+  padding:8px;
+}
+
+#menuh .dropdown-menu li.open > a{
+  background-color:#f56356;
+}
+
+#menuh .dropdown-menu > li > a:hover, #menuh .dropdown-menu > li > a:focus, #menuh .dropdown-menu > li > a:focus
+{
+  background-color:#f56356;
+}
+
+#menuh.navbar-default .navbar-toggle .icon-bar{
+  background-color: #fff;
+}
+
+#menuh.navbar-default .navbar-toggle:hover, #menuh.navbar-default .navbar-toggle:focus{
+  background-color: #b44659;
+}
+
+/*
+.iconosmenu{
+  width: 50px;
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+  min-height: 50px;
+}
+
+
+#menuhorizontal {
+  background-color: #9e3564;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #fff;
+  text-align: center;
+}
+
+
+#menuhorizontal a {
+ 
+  color: #fff;
+  text-align: center;
+}
+
+
+#menuhorizontal .dropdown-menu a {
+ 
+  color: #9e3564;
+  text-align: center;
+}
+*/
+/* ----------------------------------------
+-----------------------------------------*/
+
+
+
+
+/* ---------5. MENU VERTICAL- -----------
+-----------------------------------------*/
+
+/*contenedor superior menú vertical*/
+ .cajamenuvert{
+  padding-top: 10%;
+  padding-bottom: 300px;
+  background-color: #9e3564;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0.6em;
+  margin-top: -120px;
+  height: 100%;
+}
+
+
+/*barra vertical*/
+#menuvertical {
+  background-color: #7d294e;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #fff;
+  text-align: center;
+  margin-left: 0px;
+}
+
+
+/*posicionamiento de barra vertical*/
+.affix {
+    top: 0px;
+    min-height: 5000px;
+    width: 9%;
+    padding-left:0;
+    padding-right:0;
+    padding-top:0;
+    z-index:1;
+}
+
+/*márgenes internas superior e inferior de la barra vertical*/
+div.margintb{
+  margin-right: 1em;
+  height:2vh;
+}
+
+
+/*cada caja del menú vertical*/
+.itemvvertical{
+  margin-right: 1em;
+  height:16vh;
+  padding:0;
+  padding-top:15%;
+  padding-bottom:10%;
+}
+
+
+/*cambio de color de cada caja del menú vertical*/
+#menuvertical .col-xs-12.itemvvertical:hover{
+background-color: #b44659;
+}
+
+
+/*íconos del menú*/
+#menuvertical .iconosmenu{
+  width: 40px;
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+  min-height: 40px;
+}
+
+
+/*todos los links*/
+#menuvertical a {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+
+/*menúes anidados (completo)*/
+#menuvertical .dropdown-menu{
+  left: 110%;
+  position: relative;
+  z-index: 1;
+  top: -5.2em;
+  padding:0;
+  background-color: transparent;
+}
+
+/*PRIMER menú anidado (completo)*/
+#menuvertical .open > .dropdown-menu{
+  display:flex;
+}
+
+
+/*cada caja interna del PRIMER menú anidado*/
+#menuvertical .dropdown-menu a {
+  text-align: center;
+  white-space: normal;
+  width:200px;
+  height:120px;
+  padding-top:5%;
+  background-color:#b44659;
+  color:white;
+  font-size: 1.2rem;
+}
+
+
+/*ancho de cada caja interna del PRIMER menú anidado*/
+#menuvertical .width200{
+  width:200px;
+}
+
+
+/*cambio de color de cada caja del menú anidado*/
+#menuvertical ul.dropdown-menu li a:hover{
+  background-color:#f56356;
+}
+
+
+/*SEGUNDO menú anidado (completo)*/
+#menuvertical .dropdown-submenu {
+  position: relative;
+}
+
+
+/*cada caja interna del SEGUNDO menú anidado*/
+#menuvertical .dropdown-submenu>.dropdown-menu {
+  top: 10px;
+  left: 0;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px;
+  width:800px;
+}
+
+
+/*cada ítem dentro de caja interna del SEGUNDO menú anidado*/
+#menuvertical > div.col-xs-12.itemvvertical.open > ul > li.dropdown-submenu.width200 > ul > li > a{
+  height:auto;
+  padding:10px;
+  text-align:left;
+}
+
+
+/*ancho de cada caja interna del SEGUNDO menú anidado*/
+#menuvertical .width800, .width800 li, .width800 a {
+  width:800px!IMPORTANT;
+}
+
+
+/*Mostrar el SEGUNDO menú anidado*/
+#menuvertical .dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+
+/*Posición del SEGUNDO menú anidado número 2*/
+#menuvertical > div.col-xs-12.itemvvertical.open > ul > li:nth-child(2) > ul {
+  left:-200px;
+}
+
+
+/*Posición del SEGUNDO menú anidado número 3*/
+#menuvertical > div.col-xs-12.itemvvertical.open > ul > li:nth-child(3) > ul{
+  left:-400px;
+}
+
+
+/*Posición del SEGUNDO menú anidado número 4*/
+#menuvertical > div.col-xs-12.itemvvertical.open > ul > li:nth-child(4) > ul{
+  left:-600px;
+}
+
+
+/* función desconocida mantenido por precaución
+#menuvertical .dropdown-submenu.pull-left {
+    float: none;
+}*/
+
+
+/* función desconocida mantenido por precaución
+#menuvertical .dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+*/
+
+/* ----------------------------------------
+-----------------------------------------*/
+
+
+
+
+/* --------- 6. BREADCRUMB -----------
+-----------------------------------------*/
+
+.migas{
+  margin-left: 5%;
+ /* margin-right: 5%;*/
+  margin-top: 6%;
+  background-color: #7d294e;
+  color: white;
+}
+
+
+.migas a {
+  color:#eab4dc;
+}
+
+
+.breadcrumb > .active {
+    color: #fff;
+}
+
+
+/*separador de breadcrumb*/
+.breadcrumb > li + li:before{
+content:"//";
+}
+
+/* ----------------------------------------
+-----------------------------------------*/
+
+
+
+
+/* ---------7. ÁREA DE CONTENIDO -----------
+-----------------------------------------*/
+
+/*div superior*/
+.contenido {
+  /*height: 1200px;*/
+  padding-bottom: 0px;
+}
+
+
+/*div columna central*/
+div.contenidocentral{
+padding-right:20px;
+}
+
+
+/*.cajatexto{
+  background-color: #fff;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  padding: 10%;
+  max-height: 90%;
+  margin-bottom: 10%;
+  border-radius: 15px;
+}*/
+
+
+/*div externo fondo blanco*/
+.cajatextocontainer{
+  background-color: #fff;
+  margin-left: 5%;
+  padding:50px;
+  overflow:hidden;
+  min-height:70vh;
+  /*margin-bottom: 10%;*/
+  border-radius: 15px;
+}
+
+
+/*caja interna*/
+.cajatexto{
+  background-color: #fff;
+  height: 100%;
+  padding-right:30px;
+  overflow: auto;
+}
+
+
+/*.cajarecursos{
+  margin-top: 10%;
+  padding-right: 3em;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}*/
+
+/* ----------------------------------------
+-----------------------------------------*/
+
+
+
+
+/* ---------8. ÁREA DE RECURSOS -----------
+-----------------------------------------*/
+
+/*contenedor superior área de recursos*/
+div.cajarecursos{
+  padding-left:0;
+  padding-right:25px;
+  position: relative;
+  /*padding-top: 20px;*/
+}
+
+
+/*contenedor del área de recursos*/
+div.cajaimagenes{
+  overflow-x: hidden;
+    overflow-y: hidden;
+  margin-right: 25px;
+}
+
+
+/*todas las imágenes del área de recursos*/
+div.cajarecursos img{
+  width:100%;
+  margin-bottom:10px;
+}
+
+
+/*esquinas redondeadas para todas las imágenes del área de recursos*/
+ div.imgcontainer {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 120px;
+    border-radius: 10px;
+
+}
+}
+
+
+/*posicionamiento necesario para colocar el label*/
+div.imgcontainer{
+position: relative;
+}
+
+
+/*label de imágenes*/
+div.cajarecursos .labelimg{
+font-family: 'Baloo', cursive;
+font-size:2.5rem;
+position:absolute;
+bottom:20px;
+color:white;
+background-color:rgba(153,32,91,0.6);
+padding:5px;
+padding-left:10px;
+text-transform: uppercase;
+font-weight:bold;
+width:85%;
+}
+
+
+/*texto del label de imágenes*/
+div.cajarecursos .labelimg p{
+font-size:1.2rem;
+}
+
+
+/* ----------------------------------------
+-----------------------------------------*/
+
+
+
+
+/* --------- 9. PAGINADORES -----------
+-----------------------------------------*/
+
+ul.paginador{
+  padding-left:0;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+
+.paginadores {
+  display: inline-block;
+  width: 40%;
+  max-width: 40px;
+  margin: 0.3em;
+  margin-right: 0px;
+}
+
+/* ----------------------------------------
+-----------------------------------------*/
+
+.modal-content {
+  padding:10px!IMPORTANT;
+}
+.modal-content img{
+  margin:0px!IMPORTANT;
+}
+.modal-header{
+  padding-top:5px!IMPORTANT;
+}
+
+.pagination li:not(.disabled) a{
+  color:#7d294e!IMPORTANT;
+}
+.pagination > li:not(.disabled) > a:hover{
+  background-color: #7d294e;
+  color:#fff!IMPORTANT;
+}
+
+/* ---------10. REGLAS MEDIAQUERY -----------
+-----------------------------------------*/
+
+@media screen and (min-width: 768px) {
+    #menuhorizontal {
+      display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+div.listadoiconos {
+      display: none;
+    }
+
+
+    .cajamenuvert{
+      display: none;
+    }
+
+    .cajarecursos{
+      margin-top: 10%;
+      padding-right: 3em;
+      position: relative;
+    }
+}
+
+
+@media screen and (min-width: 540px) and (max-width: 992px) {
+    .cajamenuvert{
+     display: none;
+    }
+
+    div.cajarecursos{
+      padding-left: 4em!IMPORTANT;
+      padding-right: 4em!IMPORTANT;
+    }
+
+    div.cajaimagenes{
+      height:auto!IMPORTANT;
+    }
+
+    div.cajatextocontainer{
+      height:auto;
+    }
+
+    div.contenidocentral{
+      padding-left:4em!IMPORTANT;
+      padding-right: 4em!IMPORTANT;
+    }
+
+    div.cajatextocontainer{
+      margin-left:0;
+      margin-bottom:4em;
+    }
+
+    div#breadcrumb{
+      padding-left:4em;
+      padding-right:4em;
+    }
+
+    ol.migas{
+      margin-left:0px!IMPORTANT;
+    }
+}
+
+@media screen and (max-width:540px){
+    .cajamenuvert{
+     display: none;
+    }
+
+      div.cajatextocontainer{
+      height:auto;
+      margin-left:0;
+      margin-bottom:4em;
+      padding:0;
+      border-radius:5px;
+    }
+
+    div.contenidocentral{
+      padding-left:15px!IMPORTANT;
+      padding-right: 15px!IMPORTANT;
+    }
+        div.cajarecursos{
+      padding-left: 15px!IMPORTANT;
+      padding-right: 15px!IMPORTANT;
+    }
+    div.cajatexto{
+      padding-left:10px;
+      padding-right:10px;
+      padding-top:15px;
+      padding-bottom:15px;
+    }
+    .migas{
+      margin-left:0;
+    }
+}
+
+
+
+
+@media (max-width: )
+
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+    .sidebar-nav .navbar .navbar-collapse {
+      padding: 0;
+      max-height: none;
+    }
+    .sidebar-nav .navbar ul {
+      float: none;
+      display: block;
+    }
+    .sidebar-nav .navbar li {
+      float: none;
+      display: block;
+    }
+    .sidebar-nav .navbar li a {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+}
+
+
+@media (max-width: 992px){
+  div.contenido{
+    padding-top:50px;}
+}
+
+@media (min-width: 992px){
+  #menuh{display:none;}
+  }
+
+/* ----------------------------------------
+-----------------------------------------*/
+
+
+.cajaportada h1 {
+  font-family: 'Baloo', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  font-size:3em;
+  margin-top: 30px;
+}
+
+
+.cajaportada h3{
+  font-family: 'Baloo', sans-serif;
+  font-weight: bold;
+  color: #a1868a;
+  font-size:2.8rem;
+}
+
+.cajaportada h5{
+  font-family: 'Baloo', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size:1em;
+  padding-top: 0.3em;
+}
+
+div.contenidocentralportada{
+padding-right:10px;
+padding-left: -1em;
+padding-top:10px;
+}
+
+.iconosportada{
+  margin: auto;
+  display: block;
+  vertical-align: bottom;
+  margin-top: 10px;
+  width:100%;
+  height: 30px;
+  width: 30px;
+}
+.cajatextoportada0container{
+background-image: url(../img/portada0.0.jpg);
+  padding:50px;
+  overflow:hidden;
+  overflow-x: hidden;
+  height:97vh;
+  /*margin-bottom: 10%;*/
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+
+.cajatextoportada1container{
+background-image: url(../img/portada1.0.jpg);
+  padding:50px;
+  overflow:hidden;
+  height:80vh;
+  /*margin-bottom: 10%;*/
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+.cajatextoportada2container{
+background-image: url(../img/portada2.0.jpg);
+  padding:50px;
+  overflow:hidden;
+  height:80vh;
+  /*margin-bottom: 10%;*/
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+.cajatextoportada3container{
+background-image: url(../img/portada3.0.jpg);
+  padding:50px;
+  overflow:hidden;
+  height:80vh;
+  /*margin-bottom: 10%;*/
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+.cajaportada{
+  height: 100%;
+  padding-right:30px;
+  overflow: auto;
+}
+
+
+.tab-pane {
+  padding: 1em;
+
+}
