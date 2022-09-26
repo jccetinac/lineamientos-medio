@@ -239,6 +239,7 @@ font-family: 'Droid Sans', sans-serif;
 li {
 
   color: #eee;
+  text-align: justify
 
 }
 
@@ -1969,6 +1970,7 @@ td{
     padding-bottom:10px;
 
     padding-left:20px;
+    text-align: justify
 
 }
 
@@ -2243,12 +2245,13 @@ table {
 }
 th, td {
   width: 25%;
-  text-align: left;
+  text-align: justify;
   vertical-align: top;
   border: 1px solid rgb(117, 115, 115);
   border-collapse: collapse;
   padding: 0.3em;
   caption-side: bottom;
+  
 }
 
 .fondoVerde
