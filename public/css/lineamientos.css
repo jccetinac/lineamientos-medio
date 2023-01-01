@@ -181,7 +181,7 @@ font-family: 'Droid Sans', sans-serif;
 .modal h4{
 
 
-
+  
   color: black;
 
   font-weight: bold;
@@ -238,8 +238,10 @@ font-family: 'Droid Sans', sans-serif;
 
 li {
 
+  font-family: 'Droid Serif', serif;
   color: #eee;
   text-align: justify
+  
 
 }
 
