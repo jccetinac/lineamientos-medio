@@ -179,7 +179,9 @@ font-family: 'Droid Sans', sans-serif;
 
 }
 
-
+.cajatexto h4{
+  line-height: 2.5;
+}
 
 .modal h4{
 
